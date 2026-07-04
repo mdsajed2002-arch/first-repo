@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index <html></html></title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* space distribute */
+            align-items: center; /* vertically center */
+            padding: 1rem 2rem;
+            background: #1a1a2e;
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem; /* gap between items */
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover { color: #e94560; }
+    </style>
 </head>
 <body>
-
-     <a href="home.html">Home</a>
-     <a href="intro.html">Intro</a>
-     
-
+    <nav class="navbar">
+        <div class="logo">MyBrand</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button>Login</button>
+    </nav>
 </body>
 </html>
